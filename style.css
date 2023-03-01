@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+
+* {
+  border: 1px dashed red;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  color: #34373d;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+body,
+button {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 600px;
+}
+
+.content {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  flex: 1;
+}
+
+.main {
+  flex: 1 1 auto;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+}
+
+.left {
+  padding: 102px 16px 0;
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  height: 458px;
+}
+
+.interaction {
+  justify-content: center;
+  flex-direction: column;
+  min-width: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.interaction-top {
+  padding: 33px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image-logo {
+  height: 79px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 850px) {
+  h1 {
+    font-size: 4.2rem;
+  }
+}
+
+@media only screen and (min-width: 321px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.image-center {
+  height: 183px;
+  padding-top: 3.7rem;
+  margin-bottom: -1.6rem;
+}
+
+@media only screen and (min-width: 1201px) {
+  .image-center {
+    display: none;
+  }
+}
+
+.main p {
+  max-width: 354px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0 16px;
+  color: #323130;
+}
+
+@media only screen and (min-width: 1201px) {
+  .main p {
+    display: block;
+  }
+}
+
+.interaction-bottom {
+  padding: 20px 0 60px;
+  max-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn,
+a {
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.right {
+  padding: 44px 0 0 55px;
+  display: flex;
+  align-items: center;
+}
+
+.right img {
+  height: 515px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .left,
+  .right {
+    display: none;
+  }
+}
